@@ -1,4 +1,3 @@
-\n"""\t\Pyautomators an Framework to Test \n\n\t\t\tsubmarino"""\n\nfrom Pyautomators import fixture
 from Pyautomators.contrib.scenario_autoretry import scenario_retry
 def before_all(context):
 	pass
