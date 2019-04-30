@@ -1,9 +1,9 @@
-class Login:
+class home:
     def __init__(self, driver):
         self.URL = 'https://www.submarino.com.br/'
         self.driver = driver
 
-    def go_login(self):
+    def go_home(self):
         self.driver.get(self.URL)
 
     def go_login(self):
