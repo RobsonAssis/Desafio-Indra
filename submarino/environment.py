@@ -1,14 +1,21 @@
+#Importação da Ferramentas usadas
 from Pyautomators.contrib.scenario_autoretry import scenario_retry
 from selenium import webdriver
 
+#Importação da página home.
 from pages.pages.home import home
+
+#Importação da página produto.
 from pages.pages.product import product
-#Importação de carrinho de compras
+
+#Importação de carrinho de compras.
 from pages.pages.shopping_car import shopping_car
 
 def before_all(context):
+	#Instanciando objeto para tempo de espera.
 	context.wait_seg = webdriver.support.ui.WebDriverWait
 	context.driver = webdriver.Chrome(executable_path='.\driver\chromedriver.exe')
+	#Instnaciando a classe para "sh_car" com o driver embutido.	
 	context.sh_car = shopping_car(context.driver)
 	pass
 
