@@ -1,20 +1,9 @@
-pipeline {
-    agent any
-    stages {
-        stage('---clean---') {
-            steps {
-                bat "mvn clean"
-            }
-        }
-        stage('--test--') {
-            steps {
-                bat "mvn test"
-            }
-        }
-        stage('--package--') {
-            steps {
-                bat "mvn package"
-            }
-        }
-    }
+node('windows') {
+
+    stage('Checkout'){
+        git('http://github.com/test/test')
+        stdout = bat(returnStdout: true, script: 'git rev-parse HEAD')
+        println("stdout ################ " + stdout + " ####################")
+   }
+
 }
