@@ -1,9 +1,20 @@
-node('windows') {
+    agent any
 
-    stage('Checkout'){
-        git('http://github.com/test/test')
-        stdout = bat(returnStdout: true, script: 'git rev-parse HEAD')
-        println("stdout ################ " + stdout + " ####################")
-   }
-
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
