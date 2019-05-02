@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building'
                 git 'https://github.com/RobsonAssis/Desafio-Indra'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
-                'python -m Pyautomators'
+                echo 'Testing'
+                bat 'python -m Pyautomators'
             }
         }
         stage('Deploy') {
