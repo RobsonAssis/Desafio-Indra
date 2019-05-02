@@ -12,9 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-               bat 'cd ./submarino && dir'               
-               bat 'python -m Pyautomators'
-                
+               bat 'cd ./submarino && dir python -m Pyautomators'
             }
         }
         stage('Deploy') {
