@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'cd C:\Users\Marcone l\Desktop\projeto'
                 git init
                 git remote add origin https://github.com/RobsonAssis/Desafio-Indra.git
             }
