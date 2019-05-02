@@ -10,10 +10,15 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing'
-                bat 'virtualenv env'
-                bat 'pip install Pyautomators'
-                bat 'python -m Pyautomators'
+                bat 'cd C:\Users\Marcone l\Desktop\projeto'
+                git init
+                git remote add origin https://github.com/RobsonAssis/Desafio-Indra.git
+                git clone https://github.com/RobsonAssis/Desafio-Indra.git
+                git pull
+                bat 'cd ..\..'
+                bat 'C:\Users\Marcone l\env\Scripts\activate'
+                bat 'cd C:\Users\Marcone l\Desktop\projeto\Desafio-Indra\submarino'
+                bat 'python -m Pyautomators -f json -o .\submarino.json'
             }
         }
         stage('Deploy') {
