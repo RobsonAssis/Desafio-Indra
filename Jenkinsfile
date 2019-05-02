@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 git init
-                git remote add origin https://github.com/RobsonAssis/Desafio-Indra.git
+                git remote add origin "https://github.com/RobsonAssis/Desafio-Indra.git"
             }
         }
         stage('Test') {
