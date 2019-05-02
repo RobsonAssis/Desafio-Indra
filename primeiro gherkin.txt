@@ -1,7 +1,0 @@
-#language:pt
-funcionalidade: Pesquisa no Google
-  Cenario:Pesquisar tesqte e aparecer Teste na correção
-	Dado:que estou na tela principal do Google
-	Quando:peslquisa tesqte
-	Então: o resultado tesqte iraaparecer
-	E a correção Teste tambem deve aparecer
