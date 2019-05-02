@@ -5,7 +5,7 @@ pipeline{
         stage ("Build"){
             steps{
                 echo 'Building'
-                git 'https://github.com/lucasroberto/desafio-indra'
+                git https://github.com/RobsonAssis/Desafio-Indra
             }
         }
         stage ("Test"){
@@ -18,17 +18,10 @@ pipeline{
                 env//s//activate
                 '''
                 bat '''
-                cd hello-desafio
-                python -m Pyautomators -f json -o .//hello-desafio.json
+                cd submarino
+                python -m Pyautomators -f json -o .//submarino.json
                 '''
-                bat '''
-                cd desafio2
-                python -m Pyautomators -f json -o .//desafio2.json
-                '''
-                bat '''
-                cd enviar
-                python -m Pyautomators -f json -o .//enviar.json
-                '''
+              
             }
         }
     }
