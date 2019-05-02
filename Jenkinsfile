@@ -7,7 +7,7 @@ pipeline {
                 echo 'Building'
                 git 'https://github.com/RobsonAssis/Desafio-Indra'
                 git 'git init'
-                git 'git remote add origin https://github.com/RobsonAssis/Desafio-Indra.git'
+                git 'git remote add add https://github.com/RobsonAssis/Desafio-Indra.git'
             }
         }
         stage('Test') {
