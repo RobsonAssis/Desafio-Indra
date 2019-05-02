@@ -1,4 +1,4 @@
-pipeline {
+npipeline {
     agent any
 
     stages {
@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                RUN 'python -m Pyautomators'
+                run 'python -m Pyautomators'
              
             }
         }
