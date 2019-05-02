@@ -21,12 +21,12 @@ class home:
         self.button = self.driver.find_element_by_xpath('//*[@id="h_usr-signin"]')
         self.button.click()
 
-    def go_signup(self):
-        self.element = self.driver.find_element_by_xpath('/html/body/header/div[2]/div[2]/div[1]/div[3]/span[2]/a/span[1]')
-        self.element.click()
-        self.link = self.drive.find_element_by_xpath('/html/body/header/div[2]/div[2]/div[1]/div[3]/span[2]/div/a[2]')
+    def more_info(self):
+        self.button = self.driver.find_element_by_xpath("/html/body/footer/div[3]/div/div[2]/a/span")
+        self.button.click()
+    
+    def hotels_link(self):
+        self.link = self.driver.find_element_by_link_text("Hotéis")
         self.link.click()
-
-    def select_product(self):
-        self.link = self.driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[2]/div[2]/div[1]/div[2]/div/div/section/div/div/div/div[2]/div/div/div/div/div/div[5]/div/div/section/a')
-        self.link.click()
+        
+    

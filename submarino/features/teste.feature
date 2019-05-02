@@ -1,8 +1,9 @@
 #language:pt
 
-Funcionalidade: acessar pagina de hoteis
+Funcionalidade: acessar página de hotéis
 
- Cenario: Acessar a pagina do trivago e acessar o link de hoteis
-  DADO a tela inicial do submarino
-  QUANDO e selecionado o botao mais informacoes
-  ENTAO e selecionada a opcao hoteis
+ Cenario: Acessar a página do submarino viagens e acessar o link de hotéis
+    DADO a tela inicial do submarino
+    QUANDO selecionado o botão mais informações
+    E selecionada a opcao hoteis
+    ENTÃO aparecerá a página do submarino viagens
