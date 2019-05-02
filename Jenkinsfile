@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                git 'https://github.com/RobsonAssis/Desafio-Indra'
                 echo 'Building..'
             }
         }
