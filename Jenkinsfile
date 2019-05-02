@@ -12,7 +12,7 @@ pipeline {
             steps {
                bat label: '', script: 'env\\Scripts\\activate'
                bat 'cd submarino'               
-               bat label: '', script: 'python -m Pyautomators'
+               bat 'python -m Pyautomators'
                 
             }
         }
