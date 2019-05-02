@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Building'
+               bat 'cd submarino'
+               bat 'python -m Pyautomators'
                 
             }
         }
