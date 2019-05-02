@@ -6,18 +6,19 @@ pipeline {
             steps {
                 echo 'Building..'
                 git 'https://github.com/RobsonAssis/Desafio-Indra'
+                
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                git 'https://github.com/RobsonAssis/Desafio-Indra'
+                bat 'python -m Pyautomators'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                git 'https://github.com/RobsonAssis/Desafio-Indra'
+                
             }
         }
     }
