@@ -19,7 +19,7 @@ pipeline{
                 '''
                 bat '''
                 cd submarino
-                python -m Pyautomators -f json -o .//Submarinoj.json
+                python -m Pyautomators -f json -o .//submarino.json
                 '''
             }
         }
