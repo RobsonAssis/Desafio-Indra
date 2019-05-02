@@ -11,6 +11,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
+                bat 'cd desafio-indra'
+                bat 'cd submarino'
                 bat 'virtualenv env'
                 bat 'pip install Pyautomators'
                 bat 'python -m Pyautomators'
