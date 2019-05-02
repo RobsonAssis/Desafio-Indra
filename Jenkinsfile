@@ -1,25 +1,23 @@
-pipeline {
+   pipeline {
     agent any
 
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                clone 'https://github.com/RobsonAssis/Desafio-Indra'
+                echo 'Building'
                 
+                git 'https://github.com/RobsonAssis/Desafio-Indra'
+                bat label: '', script: 'env\\Scripts\\activate'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
-                run 'python -m Pyautomators'
-             
+               bat 'cd ./submarino && python -m Pyautomators'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                
             }
         }
     }
