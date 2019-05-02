@@ -8,7 +8,7 @@ pipeline {
                 echo 'Building'
                 
                 git 'https://github.com/RobsonAssis/Desafio-Indra'
-                bat label: '', script: 'env\\Scripts\\activate'
+                bat 'env//Scripts//activate'
             }
         }
         stage('Test') {
