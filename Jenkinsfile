@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building'
                 
-                git 'https://github.com/RobsonAssis/Desafio-Indra'
+               '''git 'https://github.com/RobsonAssis/Desafio-Indra''''
                 bat label: '', script: 'env\\Scripts\\activate'
             }
         }
