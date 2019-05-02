@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                run 'python -m Pyautomators'
+                bat 'python -m Pyautomators'
              
             }
         }
