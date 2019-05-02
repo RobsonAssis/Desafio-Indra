@@ -14,5 +14,5 @@ def step_impl(context):
 
 @then(u'aparecerá a página do submarino viagens')
 def step_impl(context):
-    context.waitting(13)
+    context.waitting(3)
     assert (context.driver.title == 'Submarino - Os Produtos que você curte estão aqui. Explore!')

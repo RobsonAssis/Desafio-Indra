@@ -10,7 +10,7 @@ from pages.pages.home import home
 from pages.pages.shopping_car import shopping_car
 
 def before_all(context):
-	context.driver = webdriver.Chrome(executable_path='.\driver\chromedriver.exe')
+	context.driver = webdriver.Firefox(executable_path='.\driver\geckodriver.exe')
 	#Instanciando a classe para "home_page" com o driver embutido.	
 	context.home_page = home(context.driver)
 	#Instanciando a classe para "sh_car" com o driver embutido.	
@@ -22,5 +22,4 @@ def before_all(context):
 
 def after_all(context):
 	context.driver.close()
-	pass
 
