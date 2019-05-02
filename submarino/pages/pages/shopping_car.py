@@ -13,3 +13,8 @@ class shopping_car:
     def remove_item(self):
         self.link = self.driver.find_element_by_xpath('/html/body/div[4]/section/section/div[1]/div[1]/section/ul/li/div[2]/div[2]/a')
         self.link.click()
+
+    def text_h2(self):
+        self.element = self.driver.find_element_by_xpath('/html/body/div[4]/section/section/div[1]/section')
+        self.inner_element = self.driver.find_element_by_xpath('/html/body/div[4]/section/section/div[1]/section/h2')
+        return self.inner_element.text
