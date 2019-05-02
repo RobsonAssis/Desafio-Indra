@@ -18,7 +18,7 @@ pipeline{
                 env//Scripts//activate
                 '''
                 bat '''
-                cd Submarino
+                cd subamrino
                 python -m Pyautomators -f json -o .//Submarinoj.json
                 '''
             }
