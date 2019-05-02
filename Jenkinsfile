@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                clone 'https://github.com/RobsonAssis/Desafio-Indra'
+                git 'https://github.com/RobsonAssis/Desafio-Indra'
             }
         }
         stage('Test') {
