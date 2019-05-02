@@ -15,6 +15,8 @@ def before_all(context):
 	#Instanciando objeto para tempo de espera.
 	context.wait_seg = webdriver.support.ui.WebDriverWait
 	context.driver = webdriver.Chrome(executable_path='.\driver\chromedriver.exe')
+	#Instnaciando a classe para "home_page" com o driver embutido.	
+	context.home_page = home(context.driver)
 	#Instnaciando a classe para "sh_car" com o driver embutido.	
 	context.sh_car = shopping_car(context.driver)
 	pass
