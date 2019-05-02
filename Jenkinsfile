@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                bat 'cd submarino'
-               bat 'python -m Pyautomators'
+               bat label: '', script: 'python -m Pyautomators'
                 
             }
         }
