@@ -21,5 +21,5 @@ def before_all(context):
 
 
 def after_all(context):
-	context.driver.close()
+	context.driver.quit()
 
