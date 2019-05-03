@@ -16,13 +16,16 @@ pipeline{
                 pip install virtualenv
                 virtualenv env
                 env//Scripts//activate
-                '''
-                bat '''
+                '''     
+            }
+        }
+        stage ("Deploy"){
+            steps{
+               bat '''
                 cd Submarino
                 python -m Pyautomators -f json -o .//submarino.json
                 '''
-              
-            }
+           }
         }
     }
 }
