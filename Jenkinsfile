@@ -34,6 +34,7 @@ pipeline{
                bat '''
                cd Submarino
                python -m Pyautomators -f json -o .//submarino.json
+               type submarino.json
                '''
            }
         }
