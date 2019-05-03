@@ -8,5 +8,8 @@ def step_impl(context):
 
 @then(u'uma solicitação será enviada')
 def step_impl(context):
-    context.driver.implicitly_wait(7)
+    #gerando conflito
+    '''context.driver.implicitly_wait(7)
     context.sh_car.reflesh()
+    assert (context.sh_car.text_h2() == 'Seu carrinho está vazio')'''
+    pass
