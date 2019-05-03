@@ -10,4 +10,5 @@ def step_impl(context):
 
 @then(u'será acessada a página de pesquisa.')
 def step_impl(context):
-    assert context.driver.title == 'Motorola X4 com Ofertas Incríveis no Submarino.com'
+    context.waitting(3)
+    assert str(context.driver.title) == 'Motorola X4 com Ofertas Incríveis no Submarino.com'
