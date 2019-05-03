@@ -10,4 +10,3 @@ def step_impl(context):
 def step_impl(context):
     context.driver.implicitly_wait(7)
     context.sh_car.reflesh()
-    assert (context.sh_car.text_h2() == 'Seu carrinho está vazio')
