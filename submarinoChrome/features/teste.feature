@@ -1,9 +1,9 @@
-#language:pt
+#language: pt
 
 Funcionalidade: acessar página de hotéis
-
-    Cenario: Acessar a página do submarino viagens e acessar o link de hotéis
-       DADO a tela inicial do submarino
-       QUANDO selecionado o botão mais informações
-       E selecionada a opcao hoteis
-       ENTÃO aparecerá a página do submarino viagens
+    Cenário: Acessar a página do submarino viagens e acessar o link de hotéis
+        Dado a tela inicial do submarino
+        Quando selecionado o botão mais informações
+        E selecionada a opcao hoteis
+        Então aparecerá a página do submarino viagens
+        
