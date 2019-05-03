@@ -18,8 +18,8 @@ pipeline{
                 env//Scripts//activate
                 '''
                 bat '''
-                cd submarinoChrome
-                python -m Pyautomators -f json -o .//submarinoChrome.json
+                cd submarino
+                python -m Pyautomators -f json -o .//submarino.json
                 '''
               
             }
