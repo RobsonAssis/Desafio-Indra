@@ -1,6 +1,6 @@
 #language: pt
 
-Funcionalidade: Remover item de carrinho de compras
+Funcionalidade: Adiciona e Remove item do carrinho de comprar
     Cenário: Remover item no carrinho de compras
         Dado um item adicionado no Carrinho
         Quando removo este item
